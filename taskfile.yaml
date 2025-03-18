@@ -1,0 +1,31 @@
+version: "3"
+
+dotenv:
+  - .env.task
+
+tasks:
+  template:
+    desc: Template for tasks
+    cmds:
+      - bash {{.SCRIPT_PATH}}/{{.TASK_NAME}}.sh
+
+  install:
+    desc: Dependency install
+    cmds:
+      - task: template
+        vars:
+          TASK_NAME: install
+
+  build:
+    desc: Build project
+    cmds:
+      - task: template
+        vars:
+          TASK_NAME: build
+
+  publish:
+    desc: Publish to NPM
+    cmds:
+      - task: template
+        vars:
+          TASK_NAME: publish

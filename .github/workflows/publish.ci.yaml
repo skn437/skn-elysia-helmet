@@ -1,0 +1,41 @@
+name: NPM Package Publish CI
+
+on:
+  release:
+    types:
+      - published
+
+jobs:
+  publish:
+    name: Package Publish
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out
+        uses: actions/checkout@v4
+
+      - name: Set Up Task
+        uses: arduino/setup-task@v2
+        with:
+          version: 3.x
+          repo-token: ${{ secrets.GITHUB_TOKEN}}
+
+      - name: Setup node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          registry-url: https://registry.npmjs.org
+
+      - name: NPM install
+        run: task install
+
+      - name: NPM build
+        run: task build
+
+      - name: NPM CI
+        run: npm ci
+
+      - name: NPM publish
+        run: task publish
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}

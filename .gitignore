@@ -1,0 +1,148 @@
+# Add files here to ignore them from git committing
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# Local Env Files
+.env*.local
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Compiled Output
+dist
+.dist
+tmp
+out-tsc
+build
+.build
+
+# Node.js
+node_modules
+
+# Logs
+logs
+.logs
+*.log
+npm-debug.log*
+pnpm-debug.log*
+.pnpm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# Others
+**/*.trace
+**/*.zip
+**/*.tar.gz
+**/*.tgz
+**/*.log
+**/*.bun
+
+# Deno, PNPM, NPM, YARN & Bun Lock Files
+deno.lock
+pnpm-lock.yaml
+package-lock.json
+yarn.lock
+bun.lock
+bun.lockb
+
+# Typescript
+*.tsbuildinfo
+
+# Drizzle ORM
+.drizzle
+
+# Next.js
+.next
+out
+.out
+.swc
+next-env.d.ts
+
+# Cypress
+cypress/videos
+cypress/screenshots
+
+# Vercel
+.vercel
+
+# Vite
+output
+.output
+
+# Svelte-Kit
+.svelte-kit
+
+# Test
+coverage
+
+# Storybook
+storybook-static
+
+# Husky
+.husky/_
+
+# Java
+apidocs
+.apidocs
+
+# Kotlin
+.kotlin
+
+# GraphQL
+.gen
+.codegen
+
+# Spring Boot
+HELP.md
+.gradle
+
+# Rust Cargo
+target
+Cargo.lock
+
+# Tuono
+.tuono
+
+# C/C++
+.cache
+
+# C#
+obj
+.obj
+bin
+.bin
+
+# Blazor
+**/*.razor.css
+**/*.razor.css.map
+**/wwwroot/**/*.css
+**/wwwroot/**/*.css.map
+**/wwwroot/css
+**/wwwroot/**/*.js
+**/wwwroot/**/*.cjs
+**/wwwroot/**/*.mjs
+**/wwwroot/js
+
+# NuGet Packages
+*.nupkg
+
+# JetBrains IDE
+!.idea/**/*.tar.gz
+!.idea/**/*.zip
+
+# PHP
+composer.lock
+.phpactor.json
+.phpunit.result.cache
+Homestead.json
+Homestead.yaml
+auth.json
+.phpunit.cache
+public/hot
+public/storage
+storage/*.key
+storage/pail
+vendor
+ssr
