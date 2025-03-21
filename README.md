@@ -18,6 +18,8 @@
 
 ### This library is originally created by [aashahin](https://github.com/aashahin). Total logic has been written by him. His original repository is [Elysia Helmet](https://github.com/aashahin/elysiajs-helmet). I just exported some types so that it can be imported in separate files while using this library and also added an object holding some readonly properties related to security configurations
 
+### I created this library so that I can manage it myself so that I don't have to rely on [aashahin](https://github.com/aashahin)
+
 &nbsp;
 
 ## **_Features:_**
@@ -103,7 +105,7 @@
 
 ```typescript
 import { Elysia } from "elysia";
-import { elysiaHelmet } from "elysiajs-helmet";
+import { elysiaHelmet } from "@best-skn/elysia-helmet";
 
 const app = new Elysia()
   .use(elysiaHelmet({}))
@@ -117,7 +119,7 @@ const app = new Elysia()
 
 ```typescript
 import { Elysia } from "elysia";
-import { elysiaHelmet, permission } from "elysiajs-helmet";
+import { elysiaHelmet, permission } from "@best-skn/elysia-helmet";
 
 const app = new Elysia()
   .use(
@@ -148,7 +150,7 @@ const app = new Elysia()
 ### Types Usage
 
 ```typescript
-import type { CSPConfig, HSTSConfig, ReportToConfig, SecurityConfig } from "elysiajs-helmet";
+import type { CSPConfig, HSTSConfig, ReportToConfig, SecurityConfig } from "@best-skn/elysia-helmet";
 ```
 
 #### These types are extremely useful if you want to define configurations in separate files
