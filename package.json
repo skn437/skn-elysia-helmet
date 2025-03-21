@@ -1,7 +1,7 @@
 {
   "name": "@best-skn/elysia-helmet",
   "description": "A comprehensive security middleware for Elysia.js applications that helps to secure your apps by setting various HTTP headers",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
@@ -13,6 +13,7 @@
       "types": "./dist/index.d.ts"
     }
   },
+  "type": "module",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/skn437/skn-elysia-helmet.git"
