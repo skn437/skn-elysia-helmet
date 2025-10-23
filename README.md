@@ -18,7 +18,7 @@
 
 ### This library is originally created by [aashahin](https://github.com/aashahin). Total logic has been written by him. His original repository is [Elysia Helmet](https://github.com/aashahin/elysiajs-helmet). I just exported some types so that it can be imported in separate files while using this library and also added an object holding some readonly properties related to security configurations
 
-### I created this library so that I can manage it myself so that I don't have to rely on [aashahin](https://github.com/aashahin)
+### I created this library so that I can manage it all by myself and I don't have to rely on [aashahin](https://github.com/aashahin)
 
 &nbsp;
 
